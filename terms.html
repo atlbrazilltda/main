@@ -15,8 +15,8 @@
     :root {
       --navy: #0b1847;
       --blue: #1d44d4;
-      --blue-lite: #eef1fd;
       --text: #0d1226;
+      --text-sub: #4b5580;
       --text-muted: #8d96bb;
       --border: #dde2f0;
       --bg: #f4f6fb;
@@ -75,17 +75,35 @@
     .meta {
       font-size: 0.825rem;
       color: var(--text-muted);
-      margin-bottom: 40px;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
     }
-    .notice {
-      background: #fffbeb;
-      border: 1px solid #fde68a;
-      border-radius: 10px;
-      padding: 18px 22px;
-      font-size: 0.875rem;
-      color: #92400e;
-      line-height: 1.6;
+    h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: -0.01em;
+      margin: 36px 0 12px;
     }
+    p {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      margin-bottom: 14px;
+      line-height: 1.75;
+    }
+    ul {
+      margin: 8px 0 14px 0;
+      padding-left: 20px;
+    }
+    ul li {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      margin-bottom: 6px;
+      line-height: 1.7;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
     @media (max-width: 680px) {
       nav { padding: 0 20px; }
       main { padding: 48px 20px 72px; }
@@ -101,13 +119,61 @@
   </nav>
   <main>
     <h1>Terms of Service</h1>
-    <p class="meta">Last updated: <span id="date"></span></p>
-    <div class="notice">
-      This page is pending legal review. Full Terms of Service will be published here shortly.
-    </div>
+    <p class="meta">Effective date: May 1, 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>These Terms of Service ("Terms") govern access to and use of the website operated by ATL BRAZIL LTDA ("ATL", "Company", "we", "us", or "our"), available at <a href="https://atlbrazil.online/">https://atlbrazil.online/</a>.</p>
+    <p>By accessing or using the Website, you acknowledge that you have read, understood, and agreed to be bound by these Terms and the Company's Privacy Policy.</p>
+
+    <h2>2. Nature of Services</h2>
+    <p>ATL BRAZIL LTDA is a business-to-business (B2B) technology and software reseller operating within the Brazilian regulated gaming and betting ecosystem.</p>
+    <p>The Company provides software-related services, integrations, commercial support, reseller activities, and related technology solutions exclusively to licensed operators, corporate entities, and business partners.</p>
+    <p>The Company does not directly offer betting, gambling, gaming, wagering, or player account services to consumers or end users.</p>
+
+    <h2>3. Eligibility and Acceptable Use</h2>
+    <p>Users may access the Website only for lawful business or professional purposes and in compliance with applicable laws and regulations.</p>
+    <p>Users must not:</p>
+    <ul>
+      <li>interfere with Website operations or security;</li>
+      <li>attempt unauthorized access to systems or data;</li>
+      <li>distribute malware or malicious code;</li>
+      <li>scrape, reproduce, or commercially exploit Website content without authorization; or</li>
+      <li>use the Website for unlawful, fraudulent, or abusive purposes.</li>
+    </ul>
+
+    <h2>4. Intellectual Property</h2>
+    <p>All Website content, trademarks, graphics, texts, software, branding materials, and related intellectual property are owned by or licensed to ATL BRAZIL LTDA unless otherwise stated.</p>
+    <p>No intellectual property rights are transferred through use of the Website.</p>
+
+    <h2>5. Privacy and Data Protection</h2>
+    <p>ATL BRAZIL LTDA processes personal data in accordance with applicable privacy and data protection laws, including the Brazilian General Data Protection Law (LGPD).</p>
+    <p>Additional information regarding data processing practices is available in the Company's <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>6. Information Security</h2>
+    <p>The Company maintains reasonable technical and organizational security measures designed to protect the Website and related systems against unauthorized access, misuse, disruption, alteration, or disclosure.</p>
+    <p>However, no internet-based service can be guaranteed as fully secure or uninterrupted.</p>
+
+    <h2>7. Third-Party Links</h2>
+    <p>The Website may contain links to third-party websites or services. ATL BRAZIL LTDA is not responsible for third-party content, availability, legality, or privacy practices.</p>
+
+    <h2>8. Disclaimer of Warranties</h2>
+    <p>To the maximum extent permitted by law, the Website is provided on an "as is" and "as available" basis without warranties of any kind, whether express or implied.</p>
+
+    <h2>9. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, ATL BRAZIL LTDA shall not be liable for indirect, incidental, consequential, punitive, or business-related damages arising from use of or inability to use the Website.</p>
+
+    <h2>10. Regulatory Compliance</h2>
+    <p>The Company operates within a regulated business environment and may apply sanctions, AML, anti-fraud, cybersecurity, and compliance controls where required by applicable law or internal compliance procedures.</p>
+
+    <h2>11. Governing Law</h2>
+    <p>These Terms shall be governed by the laws of the Federative Republic of Brazil.</p>
+    <p>Any disputes relating to these Terms or the Website shall be subject to the competent courts of the State of São Paulo, Brazil.</p>
+
+    <h2>12. Changes to These Terms</h2>
+    <p>ATL BRAZIL LTDA reserves the right to update or modify these Terms at any time. Updated versions become effective upon publication on the Website.</p>
+
+    <h2>13. Contact</h2>
+    <p>For questions regarding these Terms, please contact ATL BRAZIL LTDA at <a href="mailto:contact@atlbrazil.online">contact@atlbrazil.online</a>.</p>
   </main>
-  <script>
-    document.getElementById('date').textContent = new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
-  </script>
 </body>
 </html>
